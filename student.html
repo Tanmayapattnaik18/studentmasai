@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student report card</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>    
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="roll_no">Roll No:</label>
+        <input type="number" id="roll_no" required>
+
+        <label for="class">Class:</label>
+        <input type="text" id="class" required>
+
+        <label for="section">Section:</label>
+        <input type="text" id="section" required>
+
+        <label for="marks_science">Science:</label>
+        <input type="number" id="marks_science" required>
+
+        <label for="marks_maths">Maths:</label>
+        <input type="number" id="marks_maths" required>
+
+        <label for="marks_social_science">Social Science:</label>
+        <input type="number" id="marks_social_science" required>
+
+        <label for="marks_english">English:</label>
+        <input type="number" id="marks_english" required>
+
+        <label for="marks_hindi">Hindi:</label>
+        <input type="number" id="marks_hindi" required>
+
+        <button type="button" onclick="printTop3Subjects()">Print Top 3 Subjects</button>
+        <button type="button" onclick="printReportCard()">Print Report Card</button>
+    </form>
+
+    <div id="reportCard">
+        <h2>REPORT CARD</h2>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td id="reportName"></td>
+            </tr>
+            <tr>
+                <td>Roll No</td>
+                <td id="reportRollNo"></td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td id="reportClass"></td>
+            </tr>
+            <tr>
+                <td>Section</td>
+                <td id="reportSection"></td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td id="reportScience"></td>
+            </tr>
+            <tr>
+                <td>S.Sc</td>
+                <td id="reportSocialScience"></td>
+            </tr>
+            <tr>
+                <td>Maths</td>
+                <td id="reportMaths"></td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td id="reportEnglish"></td>
+            </tr>
+            <tr>
+                <td>Hindi</td>
+                <td id="reportHindi"></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td id="reportPercentage"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="student.js"></script>
+</html>
